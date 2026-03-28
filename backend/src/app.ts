@@ -14,18 +14,28 @@ import { publicBookingRouter } from "./routes/public-booking.routes.js";
 
 export const app = express();
 
-const allowedOrigins = new Set([
-  env.CLIENT_URL,
-  "http://localhost:5173",
-  "http://127.0.0.1:5173",
-  "http://localhost:5174",
-  "http://127.0.0.1:5174"
-]);
+const allowedOrigins = new Set(
+  [
+    env.CLIENT_URL,
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5174"
+  ]
+    .filter(Boolean)
+    .map((origin) => origin.replace(/\/$/, ""))
+);
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      if (!origin || allowedOrigins.has(origin)) {
+      if (!origin) {
+        return callback(null, true);
+      }
+
+      const normalizedOrigin = origin.replace(/\/$/, "");
+
+      if (allowedOrigins.has(normalizedOrigin)) {
         return callback(null, true);
       }
 
