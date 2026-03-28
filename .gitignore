@@ -8,6 +8,8 @@ build
 .mysql-temp/
 backend/prisma/dev.db
 *.tsbuildinfo
-
 *.log
 *.err.log
+*.pem
+*.key
+*.crt
