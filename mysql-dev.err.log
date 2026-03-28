@@ -1,0 +1,7 @@
+2026-03-27T19:49:36.924234Z 0 [Warning] [MY-010091] [Server] Can't create test file C:\ProgramData\MySQL\MySQL Server 8.0\Data\mysqld_tmp_file_case_insensitive_test.lower-test
+2026-03-27T19:49:36.925920Z 0 [System] [MY-010116] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe (mysqld 8.0.41) starting as process 13360
+2026-03-27T19:49:36.971431Z 0 [Warning] [MY-010091] [Server] Can't create test file C:\ProgramData\MySQL\MySQL Server 8.0\Data\mysqld_tmp_file_case_insensitive_test.lower-test
+2026-03-27T19:49:36.971556Z 0 [Warning] [MY-010091] [Server] Can't create test file C:\ProgramData\MySQL\MySQL Server 8.0\Data\mysqld_tmp_file_case_insensitive_test.lower-test
+2026-03-27T19:49:36.972597Z 0 [ERROR] [MY-013276] [Server] Failed to set datadir to 'C:\ProgramData\MySQL\MySQL Server 8.0\Data\' (OS errno: 13 - Permission denied)
+2026-03-27T19:49:36.977191Z 0 [ERROR] [MY-010119] [Server] Aborting
+2026-03-27T19:49:36.982885Z 0 [System] [MY-010910] [Server] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.41)  MySQL Community Server - GPL.

@@ -1,10 +1,13 @@
 node_modules
-dist
 .env
-.env.local
+dist
+build
+.vscode
 .DS_Store
-coverage
-*.log
-backend/generated
-frontend/.vite
 
+.mysql-temp/
+backend/prisma/dev.db
+*.tsbuildinfo
+
+*.log
+*.err.log
